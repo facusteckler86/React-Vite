@@ -1,18 +1,28 @@
+import "./App.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBox, faDoorOpen, faHome, faPhone, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 
-function App() {
-    const name = "Facundo";
-    const apellido = "Steckler";
+const NavBar = () => {
+  return (
+    <div className="navBar">
+      <h3>Panaderia</h3>
+      <ul>
+        <li><FontAwesomeIcon icon={faHome} /> Home</li>
+        <li><FontAwesomeIcon icon={faBox} /> Productos</li>
+        <li><FontAwesomeIcon icon={faPhone} /> Contacto</li>
+        <li><FontAwesomeIcon icon={faShoppingCart} /> Carrito</li>
+        <li><FontAwesomeIcon icon={faDoorOpen} /> Salir</li>
+      </ul>
+    </div>
+  );
+};
 
-    return (
-        <div>
-            <h1>Bienvenido {name} {apellido}</h1>
-            <button style={{
-                color: "red",
-                backgroundColor: "blue",
-                fontSize: "15px"
-            }}>Inicio</button>
-        </div>
-    );
-}
+const App = () => {
+  return (
+    <div>
+      <NavBar />
+    </div>
+  );
+};
 
 export default App;

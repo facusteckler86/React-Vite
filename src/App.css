@@ -1,4 +1,30 @@
-.{
-    background-color: aquamarine;
-    
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    background-color: whitesmoke;
+}
+
+.navBar {
+    width: 300px;
+    height: 100vh;
+    background-color: grey;
+    padding: 20px;
+}
+
+.navBar h3 {
+    margin: 0 0 20px 0;
+}
+
+.navBar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.navBar li {
+    margin: 10px 0;
+    cursor: pointer; /* Cambiado de wait a pointer */
 }
