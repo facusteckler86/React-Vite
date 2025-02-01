@@ -1,7 +1,7 @@
 
 export const CartWidget = () => {
     return(
-        <div>
+        <div className="cartWidget">
             <img src="https://img.icons8.com/ios/452/shopping-cart.png" alt="Carrito de compras"/>
         </div>
     );

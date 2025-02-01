@@ -1,4 +1,4 @@
-
+import React from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBox,
@@ -7,13 +7,13 @@ import {
   faPhone,
   faShoppingCart,
 } from "@fortawesome/free-solid-svg-icons";
-import ItemListContainer from "./itemListContainer.jsx";
+import ItemListContainer from "./itemListContainer";
 import "./App.css";
-import CartWidget from "./CartWidget.jsx";
+import CartWidget from "./CartWidget";
 
-function NavBar() {
+const NavBar = () => {
   return (
-    <div className="navbar">
+    <div className="navBar">
       <h3>Panaderia Doña Pepa</h3>
       <ul>
         <li><FontAwesomeIcon icon={faHome} />Home</li>
@@ -24,14 +24,16 @@ function NavBar() {
       </ul>
     </div>
   );
-}
+};
 
 const App = () => {
   return (
     <>
       <NavBar />
-      <ItemListContainer />
-      <CartWidget />
+      <div className="mainContent">
+        <ItemListContainer />
+        <CartWidget />
+      </div>
     </>
   );
 };

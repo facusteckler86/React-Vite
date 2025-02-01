@@ -8,7 +8,9 @@
     background-color: whitesmoke;
 }
 
-;
+body {
+    display: flex;
+}
 
 .navBar {
     width: 300px;
@@ -17,20 +19,14 @@
     padding: 20px;
 }
 
-;
-
 .navBar h3 {
     margin: 0 0 20px 0;
 }
-
-;
 
 .navBar ul {
     list-style-type: none;
     padding: 0;
 }
-
-;
 
 .navBar li {
     display: block;
@@ -38,18 +34,14 @@
     margin: 10px 0;
     cursor: pointer;
     background-color: yellow;
-    border: black;
+    border: 1px solid black;
     padding: 15px;
     transition: background-color 0.3s ease;
 }
 
-;
-
 .navBar li:hover {
     background-color: lightgray;
 }
-
-;
 
 .h1 {
     display: flex;
@@ -58,8 +50,6 @@
     font-family: 'Roboto', sans-serif;
     font-style: italic;
 }
-
-;
 
 .ProductCard {
     border: 1px solid #ddd;
@@ -71,8 +61,6 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-;
-
 .ProductCard img {
 
     max-width: 100%;
@@ -80,17 +68,25 @@
     border-radius: 5px;
 }
 
-;
-
 .ProductCard h3 {
     margin: 10px 0;
 }
 
-;
-
 .ProductCard p {
     margin: 10px 0;
+};
+
+.cartWidget {
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    size: 5px;
 }
 
-;
-
+.mainContent {
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    
+    padding: 20px;
+}
