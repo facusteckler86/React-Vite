@@ -9,7 +9,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import ItemListContainer from "./itemListContainer";
 import "./App.css";
-import CartWidget from "./CartWidget";
+
 
 const NavBar = () => {
   return (
@@ -28,13 +28,12 @@ const NavBar = () => {
 
 const App = () => {
   return (
-    <>
+    <div className="appContainer">
       <NavBar />
       <div className="mainContent">
-        <ItemListContainer />
-        <CartWidget />
-      </div>
-    </>
+        <ItemListContainer greeting="Bienvenidos a Doña Pepa"/>
+        </div>
+    </div>
   );
 };
 

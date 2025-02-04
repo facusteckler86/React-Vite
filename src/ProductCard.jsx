@@ -1,6 +1,7 @@
 
 
-const ProductCard = ({ title, description, price, image, alt }) => {
+function ProductCard ({ title, description, price, image, alt }){
+    
     return (
         <div className="productCard">
             <img src={image} alt={alt} />

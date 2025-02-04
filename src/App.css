@@ -10,11 +10,16 @@
 
 body {
     display: flex;
+    height: 100vh;
+}
+
+.appContainer {
+    display: flex;
+    width: 100%;
 }
 
 .navBar {
     width: 300px;
-    height: 100vh;
     background-color: olivedrab;
     padding: 20px;
 }
@@ -43,15 +48,16 @@ body {
     background-color: lightgray;
 }
 
-.h1 {
+.mainContent {
+    flex: 1;
+    padding: 20px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: flex-start;
-    align-content: flex-start;
-    font-family: 'Roboto', sans-serif;
-    font-style: italic;
+    align-items: flex-start;
 }
 
-.ProductCard {
+.productCard {
     border: 1px solid #ddd;
     border-radius: 5px;
     padding: 20px;
@@ -59,34 +65,21 @@ body {
     text-align: center;
     background-color: white;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: calc(25% - 40px); 
 }
 
-.ProductCard img {
-
+.productCard img {
     max-width: 100%;
     height: auto;
     border-radius: 5px;
 }
 
-.ProductCard h3 {
+.productCard h3 {
     margin: 10px 0;
 }
 
-.ProductCard p {
+.productCard p {
     margin: 10px 0;
 };
 
-.cartWidget {
-    display: flex;
-    justify-content: flex-end;
-    align-content: center;
-    size: 5px;
-}
 
-.mainContent {
-    display: flex;
-    justify-content: flex-end;
-    align-content: center;
-    
-    padding: 20px;
-}
