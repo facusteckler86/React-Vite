@@ -9,6 +9,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import ItemListContainer from "./itemListContainer";
 import "./App.css";
+import "./ProductCard.jsx"
 
 
 const NavBar = () => {

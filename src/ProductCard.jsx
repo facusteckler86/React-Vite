@@ -1,4 +1,4 @@
-
+import PropTypes from 'prop-types';
 
 function ProductCard ({ title, description, price, image, alt }){
     
@@ -12,6 +12,12 @@ function ProductCard ({ title, description, price, image, alt }){
     );
 };
 
-
+ProductCard.propTypes = {
+    title: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    price: PropTypes.string.isRequired,
+    image: PropTypes.string.isRequired,
+    alt: PropTypes.string.isRequired,
+};
 
 export default ProductCard;
