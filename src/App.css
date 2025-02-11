@@ -65,7 +65,7 @@ body {
     text-align: center;
     background-color: white;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    width: calc(25% - 40px); 
+    width: calc(25% - 40px); /* Ajusta el ancho de las tarjetas */
 }
 
 .productCard img {
@@ -80,6 +80,6 @@ body {
 
 .productCard p {
     margin: 10px 0;
-};
+}
 
 

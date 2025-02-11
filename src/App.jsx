@@ -1,4 +1,4 @@
-//import React from 'react';
+import React from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBox,
@@ -9,8 +9,6 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import ItemListContainer from "./itemListContainer";
 import "./App.css";
-import "./ProductCard.jsx"
-
 
 const NavBar = () => {
   return (
@@ -32,8 +30,8 @@ const App = () => {
     <div className="appContainer">
       <NavBar />
       <div className="mainContent">
-        <ItemListContainer greeting="Bienvenidos a Doña Pepa"/>
-        </div>
+        <ItemListContainer />
+      </div>
     </div>
   );
 };
